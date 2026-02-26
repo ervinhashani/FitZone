@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <style>
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 50px;
+        background-color: #1e1e1e;
+        color: white;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 10000;
+        transition: all 0.3s ease;
+        opacity: 0;
+        transform: translateY(-100%);
+        animation: slideDown 0.8s ease forwards;
+      }
+
+      .navbar.scrolled {
+        background-color: rgba(30, 30, 30, 0.95);
+        backdrop-filter: blur(10px);
+        padding: 10px 50px;
+      }
+      .navbar h2 {
+        color: #8fff00;
+      }
+
+      @keyframes slideDown {
+        from {
+          opacity: 0;
+          transform: translateY(-100%);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .navbar h2 {
+        margin: 0;
+        font-size: 24px;
+        letter-spacing: 1px;
+      }
+
+      .navbar ol {
+        list-style: none;
+        display: flex;
+        gap: 30px;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+      }
+
+      .navbar ol li a {
+        text-decoration: none;
+        color: white;
+        font-weight: 500;
+        transition: color 0.3s;
+      }
+
+      .navbar ol li a:hover {
+        color: #8fff00;
+      }
+
+      .navbar button {
+        padding: 8px 20px;
+        background-color: #8fff00;
+        color: black;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+        transition: all 0.3s ease;
+      }
+
+      .navbar button:hover {
+        transform: scale(1.05);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <h2>FitZone</h2>
+        <ol>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html">Plans</a></li>
+          <li><a href="index.html">About Us</a></li>
+          <li><a href="index.html">Membership</a></li>
+          <a href="Contact.html"><button>Join Now</button></a>
+        </ol>
+      </nav>
+    </header>
+    <main>
+        
+    </main>
+  </body>
+</html>
